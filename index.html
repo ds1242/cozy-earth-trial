@@ -9,33 +9,55 @@
     <title>Cozy Earth Explore Page</title>
 </head>
 <body>
-    <div class="container">
-        
-        <div class="row justify-content-between">
-            
-            <div class="explore flex-column col-4 align-self-start">
-                <ul>
-                    <li class="nav-item">
+    <div class="container-fluid">        
+        <!-- <div class="row justify-content-between"> -->
+        <div class="row row-cols-2">            
+            <div class="explore col-4 ">
+                <ul class="align-baseline">
+                    <li class="explore-item">
                         <h1>Explore</h1>
                     </li>
-                    <li class="nav-item">
-                        <button type="button" class="btn btn-primary">More Info</button>
+                    <li class="explore-item">
+                        <button type="button" class="btn" id="button" data-bs-toggle="collapse" data-bs-target="#cardCollapse">
+                            <img src="./assets/images/Plus.svg" />
+                            More Details
+                        </button>
                     </li>
                 </ul>
-            </div>
-            <!-- <div class="container"> -->
-                <!-- <div class="col align-self-center">
-                    One of three columns
-                  </div> -->
-                
-                <div class="col-8 align-items-end">
-                    <a href="https://bit.ly/3eKK7uy" target="_blank" rel='noreferrer noopener'><img src="./assets/images/Facebook.svg" /></a> 
-                    <a href="https://bit.ly/3eKK7uy" target="_blank" rel='noreferrer noopener'><img src="./assets/images/Instagram.svg" /></a> 
+                <div class="collapse collapse-horizontal" id="cardCollapse">
+
+                    <div class="card">
+                        <button type="button" class="btn-close" aria-label="Close"></button>
+                        <div class="card-body">
+                            <h2 class="card-title">Explore</h5>
+                                <p class="card-text">
+                                    ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi tempore accusamus dicta ratione magni consequatur quas nihil explicabo nulla inventore excepturi, illum eum sunt hic, suscipit voluptatibus. Nostrum, assumenda accusamus.
+                                    ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quia atque beatae sunt nobis quaerat reiciendis facilis dolorum, quis accusantium totam dolores voluptatibus. Laborum omnis sequi odio at! Exercitationem, debitis!
+                                </p>
+                                <button class="btn explore-button btn-large">Read More</button>
+                            </div>                          
+                            
+                    </div>
                 </div>
+            </div> 
+            <div class="col-8 ">
+                <div class="row icon-style">
+                    <div class="col float-right">
+                        <a href="https://bit.ly/3eKK7uy" target="_blank" rel='noreferrer noopener'><img src="./assets/images/Facebook.svg"  /></a> 
+                    </div>
+                </div>
+                <div class="row icon-style">
+                    <div class="col">
+                        <a href="https://bit.ly/3eKK7uy" target="_blank" rel='noreferrer noopener'><img src="./assets/images/Instagram.svg" /></a> 
+                    </div>
+                </div>
+            </div>
+        <!-- <div class="row">        
                 
+                
+        </div> -->
         </div>
-    </div>
-            
+    </div>      
             <!-- </div> -->
             
             
