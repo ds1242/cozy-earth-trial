@@ -25,9 +25,14 @@ h1 {
     background-color: var(--primary_color);
     height:100vh;
     
+    
+    
 }
 ul {
     list-style-type: none;
+    position:absolute;
+    vertical-align: middle;
+
 }
 #button {
     color: var(--secondary_color);
@@ -44,7 +49,9 @@ ul {
     padding: 10px;
 }
 
-
+.card {
+    width: 60vw;
+}
 .card-title {
     color: var(--primary_color);
     border-bottom: solid 3px var(--primary_color);
@@ -61,10 +68,22 @@ ul {
 }
 
 #cardCollapse {
-    visibility: hidden;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in;
+    
+}
+#cardCollapse::after {
+    transform: rotate(0.5turn);
+    transition-duration: 250ms;
 }
 #explore-list {
-    visibility: visible;
+    
+    transition-duration: 250ms;
+    transition-timing-function: ease-out;
+}
+#explore_list::after {
+    transition-duration: 250ms;
+    transform: roate(0.5turn);
 }
 
   

@@ -19,8 +19,9 @@ async function hideCard (event) {
     let listDisplay = document.getElementById("explore-list");
 
     if(cardDisplay.style.visibility === "hidden") {
-        cardDisplay.style.visibility = "visible";
+        // cardDisplay.style.visibility = "visible";
         listDisplay.style.visibility = "hidden";
+        $('#cardCollapse').slideDown("slow");
     } else {
         cardDisplay.style.visibility = "hidden";
         listDisplay.style.visibility = "visible";
