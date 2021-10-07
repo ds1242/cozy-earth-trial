@@ -13,21 +13,22 @@
         <!-- <div class="row justify-content-between"> -->
         <div class="row row-cols-2">            
             <div class="explore col-4 ">
-                <ul class="align-baseline">
+                <ul class="align-baseline" id="explore-list">
                     <li class="explore-item">
                         <h1>Explore</h1>
                     </li>
                     <li class="explore-item">
-                        <button type="button" class="btn" id="button" data-bs-toggle="collapse" data-bs-target="#cardCollapse">
+                        <!-- <button type="button" class="btn" id="button" data-bs-toggle="collapse" data-bs-target="#cardCollapse"> -->
+                        <button type="button" class="btn" id="button" >
                             <img src="./assets/images/Plus.svg" />
                             More Details
                         </button>
                     </li>
                 </ul>
-                <div class="collapse collapse-horizontal" id="cardCollapse">
+                <!-- <div class="collapse collapse-horizontal" id="cardCollapse"> -->
 
-                    <div class="card">
-                        <button type="button" class="btn-close" aria-label="Close"></button>
+                    <div class="card" id="cardCollapse">
+                        <button type="button" class="btn-close" aria-label="Close" id="cardCloseButton" ></button>
                         <div class="card-body">
                             <h2 class="card-title">Explore</h5>
                                 <p class="card-text">
@@ -38,7 +39,7 @@
                             </div>                          
                             
                     </div>
-                </div>
+                <!-- </div> -->
             </div> 
             <div class="col-8 ">
                 <div class="row icon-style">

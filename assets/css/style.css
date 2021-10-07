@@ -60,4 +60,11 @@ ul {
    
 }
 
+#cardCollapse {
+    visibility: hidden;
+}
+#explore-list {
+    visibility: visible;
+}
+
   
