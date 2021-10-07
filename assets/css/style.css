@@ -1,0 +1,30 @@
+/* *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+} */
+:root{
+    --primary_color:#5A0002;
+    --secondary_color:#edf2f4;
+}
+
+
+body {
+    background-image: url("../images/Coding-Challenge-Image-min.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+h1 {
+    font-size: 12vw;
+}
+
+.explore {
+    color: var(--secondary_color);
+    background-color: var(--primary_color);
+    height:100vh;
+}
+
+
+  
